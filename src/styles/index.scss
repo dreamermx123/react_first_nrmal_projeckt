@@ -1,5 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+@import "./reset.scss";
+@import "./varibles/global.scss";
+@import "./themes/dark.scss";
+@import "./themes/normal.scss";
+
+.app{
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
 }
