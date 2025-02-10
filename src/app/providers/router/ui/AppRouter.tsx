@@ -10,7 +10,8 @@ const AppRouter = () => {
                     {/* <Route path={'/about'} element={<AboutPage />} />
                     <Route path={'/'} element={<MainPage />} /> */}
                 {Object.values(routeConfig).map(({element, path})=>{
-                    <Route 
+
+                    return <Route 
                     key={path}
                     path={path}
                     element={(
