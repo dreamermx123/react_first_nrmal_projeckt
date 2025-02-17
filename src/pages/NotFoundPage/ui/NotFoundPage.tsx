@@ -11,7 +11,8 @@ export const NotFoundPage = (props: NotFoundPageProps) => {
     const { className, ...restProps } = props;
     const {t} = useTranslation()
     return (
-        <div className={classNames(cls.NotFoundPage, {}, [])} {...restProps}>
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        <div className={classNames(cls.NotFoundPage, {}, [className])} {...restProps}>
             {t("Страница не найдена")}
         </div>
     );
